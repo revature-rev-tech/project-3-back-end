@@ -55,4 +55,36 @@ public class Transaction {
 		this.transactionDate = transactionDate;
 		this.cartId = cartId;
 	}
+
+	public int getTransactionId() {
+		return transactionId;
+	}
+
+	public void setTransactionId(int transactionId) {
+		this.transactionId = transactionId;
+	}
+
+	public Timestamp getTransactionDate() {
+		return transactionDate;
+	}
+
+	public void setTransactionDate(Timestamp transactionDate) {
+		this.transactionDate = transactionDate;
+	}
+
+	public int getCartId() {
+		return cartId;
+	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
 }

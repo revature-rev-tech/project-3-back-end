@@ -66,6 +66,70 @@ public class Cart {
 		this.cartRemoved = cartRemoved;
 	}
 
+	public int getCartId() {
+		return cartId;
+	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public Transaction getTransaction() {
+		return transaction;
+	}
+
+	public void setTransaction(Transaction transaction) {
+		this.transaction = transaction;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public List<CartItem> getCartItems() {
+		return cartItems;
+	}
+
+	public void setCartItems(List<CartItem> cartItems) {
+		this.cartItems = cartItems;
+	}
+
+	public int getCartTotal() {
+		return cartTotal;
+	}
+
+	public void setCartTotal(int cartTotal) {
+		this.cartTotal = cartTotal;
+	}
+
+	public boolean isCartPaid() {
+		return cartPaid;
+	}
+
+	public void setCartPaid(boolean cartPaid) {
+		this.cartPaid = cartPaid;
+	}
+
+	public boolean isCartRemoved() {
+		return cartRemoved;
+	}
+
+	public void setCartRemoved(boolean cartRemoved) {
+		this.cartRemoved = cartRemoved;
+	}
+
 	public Cart(int cartId, int userId, int cartTotal, boolean cartPaid, boolean cartRemoved) {
 		this.cartId = cartId;
 		this.userId = userId;

@@ -53,6 +53,46 @@ public class Discount {
 		this.discountPercentage = discountPercentage;
 	}
 
+	public int getDiscountId() {
+		return discountId;
+	}
+
+	public void setDiscountId(int discountId) {
+		this.discountId = discountId;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public String getDiscountDescription() {
+		return discountDescription;
+	}
+
+	public void setDiscountDescription(String discountDescription) {
+		this.discountDescription = discountDescription;
+	}
+
+	public BigDecimal getDiscountPercentage() {
+		return discountPercentage;
+	}
+
+	public void setDiscountPercentage(BigDecimal discountPercentage) {
+		this.discountPercentage = discountPercentage;
+	}
+
 	public Discount(int discountId, int productId, String discountDescription, BigDecimal discountPercentage) {
 		this.discountId = discountId;
 		this.productId = productId;
