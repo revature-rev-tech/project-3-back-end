@@ -1,10 +1,10 @@
 package com.project3.revtech.service;
 
 import com.project3.revtech.dao.CartRepository;
-import com.project3.revtech.entity.Cart;
-import com.project3.revtech.entity.CartItem;
-import com.project3.revtech.entity.Discount;
-import com.project3.revtech.entity.Product;
+import com.project3.revtech.controller.entity.Cart;
+import com.project3.revtech.controller.entity.CartItem;
+import com.project3.revtech.controller.entity.Discount;
+import com.project3.revtech.controller.entity.Product;
 import com.project3.revtech.joinedPojo.CartAndItemsPojo;
 import com.project3.revtech.joinedPojo.ItemProductDiscountPojo;
 import com.project3.revtech.joinedPojo.ProductAndDiscountPojo;
@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
