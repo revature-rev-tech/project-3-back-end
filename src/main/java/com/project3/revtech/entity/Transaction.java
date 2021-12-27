@@ -26,6 +26,11 @@ import lombok.ToString;
 @Table(name = "transaction_details")
 public class Transaction {
 
+	public Transaction() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "transaction_id")

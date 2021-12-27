@@ -24,6 +24,11 @@ import lombok.ToString;
 @Table(name = "image_details")
 public class Image {
 
+	public Image() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "image_id")

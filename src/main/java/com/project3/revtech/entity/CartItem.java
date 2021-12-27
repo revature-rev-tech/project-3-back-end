@@ -21,6 +21,11 @@ import lombok.ToString;
 @Table(name = "cart_items")
 public class CartItem {
 	
+	public CartItem() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
 	@Column(name = "cart_item_id")
 	private int cartItemId;

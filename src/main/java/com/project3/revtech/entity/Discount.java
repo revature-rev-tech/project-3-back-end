@@ -25,6 +25,11 @@ import lombok.ToString;
 @Table(name = "discount_details")
 public class Discount {
 
+	public Discount() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "discount_id")
