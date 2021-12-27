@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project3.revtech.aop.pojo.DiscountPojo;
+import com.project3.revtech.pojo.DiscountPojo;
 import com.project3.revtech.exception.ApplicationException;
 import com.project3.revtech.service.DiscountService;
 

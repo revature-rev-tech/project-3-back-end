@@ -3,7 +3,7 @@ package com.project3.revtech.dao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.project3.revtech.controller.entity.CartItem;
+import com.project3.revtech.entity.CartItem;
 
 @Repository
 public interface CartItemRepository extends JpaRepository<CartItem, Integer>{

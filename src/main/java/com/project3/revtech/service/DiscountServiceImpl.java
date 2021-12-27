@@ -9,10 +9,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.project3.revtech.aop.pojo.DiscountPojo;
+import com.project3.revtech.pojo.DiscountPojo;
 import com.project3.revtech.dao.DiscountRepository;
-import com.project3.revtech.controller.entity.Discount;
-import com.project3.revtech.controller.entity.Product;
+import com.project3.revtech.entity.Discount;
+import com.project3.revtech.entity.Product;
 import com.project3.revtech.exception.ApplicationException;
 
 
