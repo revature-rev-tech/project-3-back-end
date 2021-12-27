@@ -5026,3 +5026,6 @@ java.lang.NoSuchMethodException: com.project3.revtech.entity.Product$HibernatePr
 2021-12-27 10:38:24,348 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-7777-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
 2021-12-27 10:38:31,308 WARN org.hibernate.persister.entity.AbstractEntityPersister [http-nio-7777-exec-6] HHH000502: The [product] property of the [com.project3.revtech.entity.Discount] entity was modified, but it won't be updated because the property is immutable.
 2021-12-27 10:38:46,008 WARN org.hibernate.persister.entity.AbstractEntityPersister [http-nio-7777-exec-7] HHH000502: The [product] property of the [com.project3.revtech.entity.Discount] entity was modified, but it won't be updated because the property is immutable.
+2021-12-27 10:49:48,617 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-27] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 10:49:48,618 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown initiated...
+2021-12-27 10:49:48,620 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] HikariPool-7 - Shutdown completed.
