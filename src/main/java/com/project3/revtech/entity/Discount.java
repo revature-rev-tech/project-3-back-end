@@ -19,61 +19,15 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
 @Entity
 @Table(name = "discount_details")
 public class Discount {
 
-	public Discount() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "discount_id")
 	private int discountId;
-
-	public int getDiscountId() {
-		return discountId;
-	}
-
-	public void setDiscountId(int discountId) {
-		this.discountId = discountId;
-	}
-
-	public int getProductId() {
-		return productId;
-	}
-
-	public void setProductId(int productId) {
-		this.productId = productId;
-	}
-
-	public Product getProduct() {
-		return product;
-	}
-
-	public void setProduct(Product product) {
-		this.product = product;
-	}
-
-	public String getDiscountDescription() {
-		return discountDescription;
-	}
-
-	public void setDiscountDescription(String discountDescription) {
-		this.discountDescription = discountDescription;
-	}
-
-	public BigDecimal getDiscountPercentage() {
-		return discountPercentage;
-	}
-
-	public void setDiscountPercentage(BigDecimal discountPercentage) {
-		this.discountPercentage = discountPercentage;
-	}
 
 	@Column(name = "product_id")
 	private int productId;

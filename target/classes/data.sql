@@ -16,6 +16,7 @@
 -- INSERT INTO user_details(user_email, user_password, user_first_name, user_last_name, user_address, user_contact, user_type, user_removed)
 -- VALUES('customer3@email.com', 123456, 'Test', 'Doe', 'California', '555-555-5555', 'Customer', FALSE);
 
+-- <<<<<<< HEAD
 -- #--------- Fixed the missing columns User Tables
 INSERT INTO user_details(user_id, user_email, user_name, user_password, user_first_name,
 user_last_name, user_address, user_contact, user_type, user_removed)
@@ -50,7 +51,8 @@ values (1, 'http://pexels.com/img23', 'Gaming Chairs', 234.89,
     product_description, product_name, product_qty, product_removed, product_sku)
     values (4, 'http://pexels.com/img40', 'Head Phones', 350.21, 'Amazing Sound, bass etc, Noise Cancelling features better than  Apple.',
     'MSound-79', 6, false, 'C09H11R00234');
-
+-- =======
+--
 -- INSERT INTO product_details(product_name, product_cost, product_category, product_description, product_sku, product_qty, image_url, product_removed)
 -- VALUES('iphone 13 Pro MAX', 99.95, 'PHONES', 'The newest iphone - 6.7 inch display', 'XXXXXX', 4, '_PHOTO_PLACE_HOLDER_', FALSE);
 --
@@ -66,3 +68,4 @@ INSERT INTO cart_items(cart_id, product_id, cart_qty) VALUES ( 1, 2, 1 );
 INSERT INTO discount_details(product_id, discount_description, discount_percentage) VALUES ( 2, 'stuff', 20.5 );
 
 
+-- >>>>>>> main

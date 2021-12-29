@@ -17,22 +17,58 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@NoArgsConstructor
 @ToString
 @Entity
 @Table(name = "cart_details")
 public class Cart {
 	
-	public Cart() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	@Id
 	@Column(name = "cart_id")
 	private int cartId;
+
+	@OneToOne(mappedBy = "cart")
+	private Transaction transaction;
+
+	@Column(name = "user_id")
+	private int userId;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id", nullable = false, insertable = false, updatable = false)
+	private User user;
+
+	@OneToMany(mappedBy = "cart")
+	private List<CartItem> cartItems;
+	
+	@Column(name = "cart_total")
+	private int cartTotal;
+
+	@Column(name = "cart_paid")
+	private boolean cartPaid;
+
+	@Column(name = "cart_removed")
+	private boolean cartRemoved;
+
+	//This constructor will only be used for joined tables. Do not use
+	public Cart(int cartId, Transaction transaction, int userId, User user, List<CartItem> cartItems, int cartTotal,
+			boolean cartPaid, boolean cartRemoved) {
+		super();
+		this.cartId = cartId;
+		this.transaction = transaction;
+		this.userId = userId;
+		this.user = user;
+		this.cartItems = cartItems;
+		this.cartTotal = cartTotal;
+		this.cartPaid = cartPaid;
+		this.cartRemoved = cartRemoved;
+	}
+
+	public Cart(int cartId, int userId, int cartTotal, boolean cartPaid, boolean cartRemoved) {
+		this.cartId = cartId;
+		this.userId = userId;
+		this.cartTotal = cartTotal;
+		this.cartPaid = cartPaid;
+		this.cartRemoved = cartRemoved;
+	}
 
 	public int getCartId() {
 		return cartId;
@@ -95,50 +131,6 @@ public class Cart {
 	}
 
 	public void setCartRemoved(boolean cartRemoved) {
-		this.cartRemoved = cartRemoved;
-	}
-
-	@OneToOne(mappedBy = "cart")
-	private Transaction transaction;
-
-	@Column(name = "user_id")
-	private int userId;
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user_id", nullable = false, insertable = false, updatable = false)
-	private User user;
-
-	@OneToMany(mappedBy = "cart")
-	private List<CartItem> cartItems;
-	
-	@Column(name = "cart_total")
-	private int cartTotal;
-
-	@Column(name = "cart_paid")
-	private boolean cartPaid;
-
-	@Column(name = "cart_removed")
-	private boolean cartRemoved;
-
-	//This constructor will only be used for joined tables. Do not use
-	public Cart(int cartId, Transaction transaction, int userId, User user, List<CartItem> cartItems, int cartTotal,
-			boolean cartPaid, boolean cartRemoved) {
-		super();
-		this.cartId = cartId;
-		this.transaction = transaction;
-		this.userId = userId;
-		this.user = user;
-		this.cartItems = cartItems;
-		this.cartTotal = cartTotal;
-		this.cartPaid = cartPaid;
-		this.cartRemoved = cartRemoved;
-	}
-
-	public Cart(int cartId, int userId, int cartTotal, boolean cartPaid, boolean cartRemoved) {
-		this.cartId = cartId;
-		this.userId = userId;
-		this.cartTotal = cartTotal;
-		this.cartPaid = cartPaid;
 		this.cartRemoved = cartRemoved;
 	}
 }

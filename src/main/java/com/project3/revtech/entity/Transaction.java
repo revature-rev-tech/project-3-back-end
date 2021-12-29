@@ -20,53 +20,15 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
 @Entity
 @Table(name = "transaction_details")
 public class Transaction {
 
-	public Transaction() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "transaction_id")
 	private int transactionId;
-
-	public int getTransactionId() {
-		return transactionId;
-	}
-
-	public void setTransactionId(int transactionId) {
-		this.transactionId = transactionId;
-	}
-
-	public Timestamp getTransactionDate() {
-		return transactionDate;
-	}
-
-	public void setTransactionDate(Timestamp transactionDate) {
-		this.transactionDate = transactionDate;
-	}
-
-	public int getCartId() {
-		return cartId;
-	}
-
-	public void setCartId(int cartId) {
-		this.cartId = cartId;
-	}
-
-	public Cart getCart() {
-		return cart;
-	}
-
-	public void setCart(Cart cart) {
-		this.cart = cart;
-	}
 
 	@NotNull
 	@Column(name = "transaction_date")
