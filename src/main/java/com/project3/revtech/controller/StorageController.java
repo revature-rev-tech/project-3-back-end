@@ -21,7 +21,8 @@ public class StorageController {
 	
 	@Autowired
 	private StorageService service;
-	
+
+	/*
 	// http://localhost:7777/file/upload
 	@PostMapping("/upload")
 	public ResponseEntity<String> uploadFile(@RequestParam(value = "file")MultipartFile file) {
@@ -47,5 +48,5 @@ public class StorageController {
         return new ResponseEntity<>(service.deleteFile(fileName), HttpStatus.OK);
     }
 
-
+	 */
 }

@@ -1,0 +1,1046 @@
+
+2021-12-27 12:17:13,866 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 12:17:14,034 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:17:14,038 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:17:14,250 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-27 12:17:14,250 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-27 12:17:16,826 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:17:17,019 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 170 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:17:18,843 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:17:18,860 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:17:18,860 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:17:18,861 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:17:19,057 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:17:19,058 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4804 ms
+2021-12-27 12:17:19,425 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-27 12:17:19,859 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-27 12:17:19,881 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:17:20,355 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:17:20,500 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 12:17:20,884 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 12:17:21,141 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:17:21,993 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,345 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,373 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,421 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,442 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,488 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,513 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:17:22,917 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:17:22,939 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:17:23,828 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:17:25,215 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:17:25,229 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:17:25,288 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:17:25,317 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:17:25,354 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 12.418 seconds (JVM running for 14.19)
+2021-12-27 12:18:22,629 INFO org.apache.juli.logging.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 12:18:22,644 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-27 12:18:22,647 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 2 ms
+2021-12-27 12:18:23,466 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-7777-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method getCartItems() is undefined for the type Cart
+	The method getProduct() is undefined for the type CartItem
+	The method getDiscount() is undefined for the type Product
+	The method getProductId() is undefined for the type Product
+	The method getProductSku() is undefined for the type Product
+	The method getProductName() is undefined for the type Product
+	The method getProductCost() is undefined for the type Product
+	The method getProductCategory() is undefined for the type Product
+	The method getProductDescription() is undefined for the type Product
+	The method getProductQty() is undefined for the type Product
+	The method getImageUrl() is undefined for the type Product
+	The method isProductRemoved() is undefined for the type Product
+	The method getDiscountId() is undefined for the type Discount
+	The method getDiscountDescription() is undefined for the type Discount
+	The method getDiscountPercentage() is undefined for the type Discount
+	The method getCartItemId() is undefined for the type CartItem
+	The method getCartId() is undefined for the type CartItem
+	The method getProductId() is undefined for the type CartItem
+	The method getCartQty() is undefined for the type CartItem
+	The method getCartId() is undefined for the type Cart
+	The method getUserId() is undefined for the type Cart
+	The method getCartTotal() is undefined for the type Cart
+	The method isCartPaid() is undefined for the type Cart
+	The method isCartRemoved() is undefined for the type Cart
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	The method getCartItems() is undefined for the type Cart
+	The method getProduct() is undefined for the type CartItem
+	The method getDiscount() is undefined for the type Product
+	The method getProductId() is undefined for the type Product
+	The method getProductSku() is undefined for the type Product
+	The method getProductName() is undefined for the type Product
+	The method getProductCost() is undefined for the type Product
+	The method getProductCategory() is undefined for the type Product
+	The method getProductDescription() is undefined for the type Product
+	The method getProductQty() is undefined for the type Product
+	The method getImageUrl() is undefined for the type Product
+	The method isProductRemoved() is undefined for the type Product
+	The method getDiscountId() is undefined for the type Discount
+	The method getDiscountDescription() is undefined for the type Discount
+	The method getDiscountPercentage() is undefined for the type Discount
+	The method getCartItemId() is undefined for the type CartItem
+	The method getCartId() is undefined for the type CartItem
+	The method getProductId() is undefined for the type CartItem
+	The method getCartQty() is undefined for the type CartItem
+	The method getCartId() is undefined for the type Cart
+	The method getUserId() is undefined for the type Cart
+	The method getCartTotal() is undefined for the type Cart
+	The method isCartPaid() is undefined for the type Cart
+	The method isCartRemoved() is undefined for the type Cart
+
+	at com.project3.revtech.service.CartItemProductServiceImpl.getAllCartItemProducts(CartItemProductServiceImpl.java:31)
+	at com.project3.revtech.service.CartItemProductServiceImpl$$FastClassBySpringCGLIB$$fa728f4e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.project3.revtech.service.CartItemProductServiceImpl$$EnhancerBySpringCGLIB$$2636688b.getAllCartItemProducts(<generated>)
+	at com.project3.revtech.controller.TestController.getCart(TestController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2021-12-27 12:22:02,266 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:22:02,478 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-6] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:22:02,480 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-12-27 12:22:02,485 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-12-27 12:22:02,806 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:22:02,810 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:22:03,611 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:22:03,646 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:22:03,950 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:22:03,956 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:22:03,962 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:22:03,966 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:22:03,997 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:22:03,998 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1181 ms
+2021-12-27 12:22:04,129 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-12-27 12:22:04,133 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-12-27 12:22:04,134 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:22:04,347 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:22:04,354 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:22:04,473 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,489 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,505 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,559 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,574 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,584 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,609 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:22:04,692 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:22:04,693 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:22:05,043 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:22:05,736 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:22:05,745 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:22:05,772 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:22:05,774 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:22:05,784 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 3.103 seconds (JVM running for 294.611)
+2021-12-27 12:22:05,791 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:22:29,455 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:22:29,659 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-8] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:22:29,660 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown initiated...
+2021-12-27 12:22:29,669 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown completed.
+2021-12-27 12:22:29,896 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:22:29,896 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:22:30,888 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:22:30,936 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:22:31,185 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:22:31,187 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:22:31,188 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:22:31,192 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:22:31,215 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:22:31,216 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1314 ms
+2021-12-27 12:22:31,314 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-12-27 12:22:31,319 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-12-27 12:22:31,321 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:22:31,471 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:22:31,489 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:22:31,611 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,649 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,659 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,753 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,777 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,808 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,820 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:22:31,923 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:22:31,935 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:22:32,633 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:22:33,500 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:22:33,509 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:22:33,542 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:22:33,546 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:22:33,562 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 3.735 seconds (JVM running for 322.388)
+2021-12-27 12:22:33,569 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:24:00,403 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-12] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:24:00,607 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-12] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:24:00,608 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-3 - Shutdown initiated...
+2021-12-27 12:24:00,609 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-3 - Shutdown completed.
+2021-12-27 12:24:00,803 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:24:00,805 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:24:01,421 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:24:01,456 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:24:01,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:24:01,700 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:24:01,701 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:24:01,702 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:24:01,726 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:24:01,727 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 909 ms
+2021-12-27 12:24:01,791 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2021-12-27 12:24:01,795 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2021-12-27 12:24:01,796 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:24:02,160 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:24:02,167 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:24:02,298 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,318 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,342 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,380 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,396 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,417 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,432 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:24:02,514 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:24:02,515 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:24:02,984 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:24:03,624 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:24:03,632 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:24:03,668 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:24:03,670 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:24:03,680 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 2.945 seconds (JVM running for 412.504)
+2021-12-27 12:24:03,686 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:32:24,337 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-16] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:32:24,551 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-16] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:32:24,552 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-4 - Shutdown initiated...
+2021-12-27 12:32:24,555 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-4 - Shutdown completed.
+2021-12-27 12:32:24,892 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:32:24,893 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:32:25,631 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:32:25,676 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:32:25,976 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:32:25,978 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:32:25,979 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:32:25,979 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:32:26,020 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:32:26,020 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1123 ms
+2021-12-27 12:32:26,102 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2021-12-27 12:32:26,105 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2021-12-27 12:32:26,105 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:32:26,256 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:32:26,263 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:32:26,362 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,382 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,392 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,411 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,436 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,446 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,453 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:32:26,498 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:32:26,499 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:32:26,770 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:32:27,252 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:32:27,261 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:32:27,282 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:32:27,283 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:32:27,292 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 2.491 seconds (JVM running for 916.076)
+2021-12-27 12:32:27,295 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:34:43,459 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-20] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:34:43,670 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-20] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:34:43,671 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-5 - Shutdown initiated...
+2021-12-27 12:34:43,674 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-5 - Shutdown completed.
+2021-12-27 12:34:43,973 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:34:43,974 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:34:44,742 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:34:44,743 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-12-27 12:34:45,118 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:34:45,120 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:34:45,121 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:34:45,121 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:34:45,184 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:34:45,185 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1193 ms
+2021-12-27 12:34:45,298 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2021-12-27 12:34:45,318 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2021-12-27 12:34:45,321 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:34:45,516 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:34:45,524 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:34:45,625 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:34:45,626 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:34:45,720 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:34:46,069 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:34:46,077 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:34:46,094 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:34:46,098 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:34:46,131 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 2.222 seconds (JVM running for 1054.91)
+2021-12-27 12:34:46,137 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:34:50,327 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-24] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:34:50,534 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-24] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:34:50,535 INFO com.zaxxer.hikari.HikariDataSource [Thread-24] HikariPool-6 - Shutdown initiated...
+2021-12-27 12:34:50,536 INFO com.zaxxer.hikari.HikariDataSource [Thread-24] HikariPool-6 - Shutdown completed.
+2021-12-27 12:34:50,799 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:34:50,800 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:34:51,610 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:34:51,662 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:34:52,337 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:34:52,339 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:34:52,341 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:34:52,342 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:34:52,399 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:34:52,400 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1597 ms
+2021-12-27 12:34:52,776 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
+2021-12-27 12:34:52,785 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
+2021-12-27 12:34:52,786 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:34:53,421 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:34:53,484 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:34:54,477 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:34:54,484 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:34:55,414 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:34:57,196 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:34:57,209 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:34:57,241 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:34:57,267 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:34:57,288 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 6.543 seconds (JVM running for 1066.067)
+2021-12-27 12:34:57,295 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:34:59,069 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.project3.revtech.RevtechApplicationTests], using SpringBootContextLoader
+2021-12-27 12:34:59,083 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.project3.revtech.RevtechApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-27 12:34:59,084 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.project3.revtech.RevtechApplicationTests]: RevtechApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-27 12:34:59,354 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.project3.revtech.RevtechApplication for test class com.project3.revtech.RevtechApplicationTests
+2021-12-27 12:34:59,627 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-27 12:34:59,674 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3016fd5e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35d08e6c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@53d102a2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c45ee6e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b3e12b5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5aac4250, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1338fb5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@42463763, org.springframework.test.context.event.EventPublishingTestExecutionListener@59f63e24, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61f05988, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ca33c24, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@fade1fc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@67c2e933, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@41dd05a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@613a8ee1]
+2021-12-27 12:35:00,431 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 12:35:00,499 INFO org.springframework.boot.StartupInfoLogger [main] Starting RevtechApplicationTests using Java 17 on Users-Air.home with PID 868 (started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:35:00,501 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-12-27 12:35:02,908 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:35:03,108 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 168 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:35:04,507 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-27 12:35:04,990 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-27 12:35:05,417 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:35:05,577 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 12:35:06,008 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 12:35:06,339 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:35:08,464 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:35:08,487 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:35:10,054 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:35:12,215 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:35:12,310 INFO org.springframework.boot.StartupInfoLogger [main] Started RevtechApplicationTests in 12.5 seconds (JVM running for 16.011)
+2021-12-27 12:35:12,909 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:35:12,917 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-27 12:35:12,925 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-27 12:37:54,694 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-28] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:37:54,900 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-28] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:37:54,901 INFO com.zaxxer.hikari.HikariDataSource [Thread-28] HikariPool-7 - Shutdown initiated...
+2021-12-27 12:37:54,904 INFO com.zaxxer.hikari.HikariDataSource [Thread-28] HikariPool-7 - Shutdown completed.
+2021-12-27 12:37:55,295 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:37:55,298 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:37:57,110 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:37:57,204 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 91 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:37:57,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:37:57,626 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:37:57,626 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:37:57,626 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:37:57,651 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:37:57,651 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2346 ms
+2021-12-27 12:37:57,823 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2021-12-27 12:37:57,839 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2021-12-27 12:37:57,840 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:37:58,021 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:37:58,038 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:37:58,721 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:37:58,723 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:37:59,629 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:38:00,628 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:38:00,639 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:38:00,682 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:38:00,684 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:38:00,706 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 5.48 seconds (JVM running for 1249.479)
+2021-12-27 12:38:00,712 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:48:03,487 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-32] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:03,695 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-32] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:48:03,695 INFO com.zaxxer.hikari.HikariDataSource [Thread-32] HikariPool-8 - Shutdown initiated...
+2021-12-27 12:48:03,698 INFO com.zaxxer.hikari.HikariDataSource [Thread-32] HikariPool-8 - Shutdown completed.
+2021-12-27 12:48:04,044 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:48:04,044 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:48:06,367 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:48:06,424 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:48:07,199 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:48:07,200 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:07,202 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:48:07,202 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:48:07,231 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:48:07,232 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3185 ms
+2021-12-27 12:48:07,511 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Starting...
+2021-12-27 12:48:07,561 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Start completed.
+2021-12-27 12:48:07,561 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:48:07,843 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:48:07,851 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:48:08,069 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,119 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,183 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,201 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,234 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,265 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,282 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:48:08,344 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:48:08,345 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:08,827 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:48:09,600 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:48:09,607 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:48:09,626 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:09,628 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:48:09,647 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 5.672 seconds (JVM running for 1858.402)
+2021-12-27 12:48:09,655 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:48:11,033 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-36] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:11,239 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-36] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:48:11,240 INFO com.zaxxer.hikari.HikariDataSource [Thread-36] HikariPool-9 - Shutdown initiated...
+2021-12-27 12:48:11,243 INFO com.zaxxer.hikari.HikariDataSource [Thread-36] HikariPool-9 - Shutdown completed.
+2021-12-27 12:48:11,463 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:48:11,464 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:48:11,829 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:48:11,856 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:48:12,040 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:48:12,042 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:12,044 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:48:12,045 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:48:12,071 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:48:12,072 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 606 ms
+2021-12-27 12:48:12,158 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
+2021-12-27 12:48:12,161 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
+2021-12-27 12:48:12,162 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:48:12,269 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:48:12,280 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:48:12,332 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,358 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,365 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,378 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,383 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,391 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,395 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:48:12,442 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:48:12,442 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:12,705 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:48:13,199 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:48:13,203 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:48:13,217 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:13,219 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:48:13,229 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 1.819 seconds (JVM running for 1861.984)
+2021-12-27 12:48:13,232 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:48:18,071 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-40] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:18,274 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-40] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:48:18,275 INFO com.zaxxer.hikari.HikariDataSource [Thread-40] HikariPool-10 - Shutdown initiated...
+2021-12-27 12:48:18,276 INFO com.zaxxer.hikari.HikariDataSource [Thread-40] HikariPool-10 - Shutdown completed.
+2021-12-27 12:48:18,565 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 557 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:48:18,566 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:48:19,132 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:48:19,182 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:48:19,440 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:48:19,442 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:19,442 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:48:19,444 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:48:19,474 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:48:19,475 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 906 ms
+2021-12-27 12:48:19,568 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Starting...
+2021-12-27 12:48:19,570 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Start completed.
+2021-12-27 12:48:19,571 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:48:19,682 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:48:19,687 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:48:19,752 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.CartItem (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,763 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Image (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,767 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Cart (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,782 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Product (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,800 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Transaction (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,807 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.Discount (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,813 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.project3.revtech.entity.User (class must be instantiated by Interceptor)
+2021-12-27 12:48:19,854 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:48:19,855 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:48:20,073 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:48:20,614 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:48:20,620 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:48:20,632 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:48:20,633 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:48:20,642 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 2.147 seconds (JVM running for 1869.397)
+2021-12-27 12:48:20,645 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-12-27 12:51:21,345 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:51:21,553 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 12:51:21,553 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-11 - Shutdown initiated...
+2021-12-27 12:51:21,601 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-11 - Shutdown completed.
+2021-12-27 12:54:34,778 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 12:54:34,972 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17 on Users-Air.home with PID 1317 (/Users/user/Desktop/Project3/project-3-back-end/target/classes started by user in /Users/user/Desktop/Project3/project-3-back-end)
+2021-12-27 12:54:34,974 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-27 12:54:35,190 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-27 12:54:35,195 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-27 12:54:38,413 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-27 12:54:38,655 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 213 ms. Found 6 JPA repository interfaces.
+2021-12-27 12:54:40,962 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-27 12:54:40,982 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:54:40,983 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-27 12:54:40,984 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 12:54:41,201 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-27 12:54:41,203 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6006 ms
+2021-12-27 12:54:41,742 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-27 12:54:42,302 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-27 12:54:42,333 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:revtech'
+2021-12-27 12:54:43,029 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 12:54:43,170 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 12:54:43,989 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 12:54:44,846 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 12:54:47,680 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-27 12:54:47,699 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 12:54:49,118 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 12:54:51,106 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-27 12:54:51,124 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-27 12:54:51,197 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-27 12:54:51,274 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-27 12:54:51,369 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 17.604 seconds (JVM running for 19.653)
+2021-12-27 13:00:36,737 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 13:00:36,752 ERROR com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2021-12-27 13:00:36,957 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-12-27 13:00:36,960 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-27 13:00:37,012 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 15:50:28,402 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 15:50:28,424 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 67130 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 15:50:28,425 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 15:50:28,577 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 15:50:28,578 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 15:50:30,653 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 15:50:30,815 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 153 ms. Found 6 JPA repository interfaces.
+2021-12-28 15:50:31,134 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=91f35863-cedb-399d-98bd-eeb0b3ec1c3b
+2021-12-28 15:50:32,096 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 15:50:32,109 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 15:50:32,110 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 15:50:32,110 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 15:50:32,198 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 15:50:32,199 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3617 ms
+2021-12-28 15:50:32,672 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 15:50:32,856 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 15:50:32,868 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 15:50:33,173 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 15:50:33,208 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 15:50:33,326 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 15:50:33,417 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 15:50:34,471 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 15:50:34,503 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 15:50:34,584 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aws.credentials.access-key' in value "${cloud.aws.credentials.access-key}"
+2021-12-28 15:50:34,585 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 15:50:34,591 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-12-28 15:50:34,599 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-12-28 15:50:34,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-12-28 15:50:34,633 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-28 15:50:34,650 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aws.credentials.access-key' in value "${cloud.aws.credentials.access-key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.project3.revtech.RevtechApplication.main(RevtechApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aws.credentials.access-key' in value "${cloud.aws.credentials.access-key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 22 common frames omitted
+2021-12-28 16:27:37,543 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 16:27:37,574 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 67917 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 16:27:37,584 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 16:27:37,703 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 16:27:37,704 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 16:27:39,846 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 16:27:40,020 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 160 ms. Found 6 JPA repository interfaces.
+2021-12-28 16:27:40,332 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=60a8f46a-375f-3244-b6e0-4501178c13ed
+2021-12-28 16:27:41,380 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 16:27:41,394 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 16:27:41,394 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 16:27:41,395 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 16:27:41,494 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 16:27:41,495 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3789 ms
+2021-12-28 16:27:41,938 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 16:27:42,142 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 16:27:42,159 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 16:27:42,475 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 16:27:42,516 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 16:27:42,633 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 16:27:42,739 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 16:27:43,778 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 16:27:43,787 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 16:27:44,512 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storageController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+2021-12-28 16:27:44,513 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 16:27:44,516 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-12-28 16:27:44,520 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-12-28 16:27:44,525 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-12-28 16:27:44,549 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-28 16:27:44,564 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storageController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.project3.revtech.RevtechApplication.main(RevtechApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 36 common frames omitted
+2021-12-28 16:29:01,092 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 16:29:01,131 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 67968 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 16:29:01,133 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 16:29:01,287 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 16:29:01,288 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 16:29:03,287 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 16:29:03,469 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 171 ms. Found 6 JPA repository interfaces.
+2021-12-28 16:29:03,750 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=60a8f46a-375f-3244-b6e0-4501178c13ed
+2021-12-28 16:29:04,692 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 16:29:04,705 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 16:29:04,706 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 16:29:04,706 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 16:29:04,804 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 16:29:04,805 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3515 ms
+2021-12-28 16:29:05,234 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 16:29:05,414 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 16:29:05,426 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 16:29:05,750 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 16:29:05,790 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 16:29:05,893 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 16:29:05,979 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 16:29:06,863 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 16:29:06,871 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 16:29:07,841 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storageController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+2021-12-28 16:29:07,843 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 16:29:07,847 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-12-28 16:29:07,852 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-12-28 16:29:07,855 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-12-28 16:29:07,882 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-28 16:29:07,898 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storageController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.project3.revtech.RevtechApplication.main(RevtechApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storageService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'application.bucket.name' in value "${application.bucket.name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 36 common frames omitted
+2021-12-28 16:44:52,510 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 16:44:52,531 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 68374 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 16:44:52,535 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 16:44:52,621 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 16:44:52,622 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 16:44:54,547 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 16:44:54,718 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 150 ms. Found 6 JPA repository interfaces.
+2021-12-28 16:44:55,101 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=60a8f46a-375f-3244-b6e0-4501178c13ed
+2021-12-28 16:44:56,155 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 16:44:56,166 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 16:44:56,167 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 16:44:56,167 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 16:44:56,264 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 16:44:56,265 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3643 ms
+2021-12-28 16:44:56,563 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 16:44:56,808 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 16:44:56,827 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 16:44:57,144 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 16:44:57,187 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 16:44:57,300 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 16:44:57,387 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 16:44:58,509 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 16:44:58,520 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 16:44:59,573 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 16:45:00,497 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-28 16:45:00,524 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 16:45:00,578 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-28 16:45:00,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-28 16:45:00,628 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 9.005 seconds (JVM running for 9.947)
+2021-12-28 16:45:17,789 INFO org.apache.juli.logging.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-28 16:45:17,792 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-12-28 16:45:17,801 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 9 ms
+2021-12-28 19:32:26,372 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 19:32:26,385 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 19:32:26,394 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 20:58:24,282 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 20:58:24,307 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 73839 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 20:58:24,311 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 20:58:24,409 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 20:58:24,409 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 20:58:26,007 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 20:58:26,124 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 104 ms. Found 6 JPA repository interfaces.
+2021-12-28 20:58:26,436 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=60a8f46a-375f-3244-b6e0-4501178c13ed
+2021-12-28 20:58:27,406 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 20:58:27,418 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 20:58:27,419 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 20:58:27,419 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 20:58:27,520 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 20:58:27,521 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3110 ms
+2021-12-28 20:58:27,924 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 20:58:28,119 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 20:58:28,130 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 20:58:28,408 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 20:58:28,448 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 20:58:28,557 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 20:58:28,627 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 20:58:29,621 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 20:58:29,631 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 20:58:30,573 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 20:58:31,477 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-28 20:58:31,487 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 20:58:31,533 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-28 20:58:31,550 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-28 20:58:31,577 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 7.889 seconds (JVM running for 8.863)
+2021-12-28 21:03:09,145 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:03:09,150 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:03:09,151 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:06:38,247 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:06:38,252 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:06:38,253 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:06:38,429 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.project3.revtech.RevtechApplication for test class ProductTesting
+2021-12-28 21:06:38,551 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-28 21:06:38,566 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5536379e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@277f7dd3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6c8bca63, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2364305a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@470a696f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc715b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@292d1c71, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b491fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f1c5af9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c55f277, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ddabb18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e8f7922, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@63192798, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50eca7c6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58e6d4b8]
+2021-12-28 21:06:39,056 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 21:06:39,066 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProductTesting using Java 17.0.1 on jl12.fios-router.home with PID 74061 (started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 21:06:39,070 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-12-28 21:06:40,526 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 21:06:40,646 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 111 ms. Found 6 JPA repository interfaces.
+2021-12-28 21:06:40,914 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=6260c38e-dee5-3836-ba02-7bce35cef3e0
+2021-12-28 21:06:42,370 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-28 21:06:42,549 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-28 21:06:42,786 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 21:06:42,864 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 21:06:42,945 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 21:06:43,100 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 21:06:43,868 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 21:06:43,879 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:06:45,409 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 21:06:47,346 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 21:06:47,442 INFO org.springframework.boot.StartupInfoLogger [main] Started ProductTesting in 8.801 seconds (JVM running for 10.513)
+2021-12-28 21:06:47,622 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:06:47,625 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 21:06:47,629 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 21:11:13,978 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:11:13,985 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:11:13,985 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:11:14,193 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.project3.revtech.RevtechApplication for test class ProductTesting
+2021-12-28 21:11:14,390 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-28 21:11:14,415 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77602954, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@e260766, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c3dec30, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@34a97744, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4275c20c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c56e013, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3fc9dfc5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@40258c2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@2cac4385, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6731787b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16f7b4af, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7adf16aa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34a1d21f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58bf8650, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@73c60324]
+2021-12-28 21:11:15,144 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 21:11:15,164 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProductTesting using Java 17.0.1 on jl12.fios-router.home with PID 74154 (started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 21:11:15,165 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-12-28 21:11:16,206 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:11:16,212 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:11:16,213 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:11:16,387 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.project3.revtech.RevtechApplication for test class ProductTesting
+2021-12-28 21:11:16,531 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-28 21:11:16,545 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77602954, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@e260766, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c3dec30, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@34a97744, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4275c20c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c56e013, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3fc9dfc5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@40258c2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@2cac4385, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6731787b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16f7b4af, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7adf16aa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34a1d21f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58bf8650, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@73c60324]
+2021-12-28 21:11:17,149 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProductTesting using Java 17.0.1 on jl12.fios-router.home with PID 74159 (started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 21:11:17,148 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 21:11:17,151 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-12-28 21:11:17,311 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 21:11:17,480 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 149 ms. Found 6 JPA repository interfaces.
+2021-12-28 21:11:17,838 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=6260c38e-dee5-3836-ba02-7bce35cef3e0
+2021-12-28 21:11:19,153 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 21:11:19,296 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 130 ms. Found 6 JPA repository interfaces.
+2021-12-28 21:11:19,554 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-28 21:11:19,598 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=6260c38e-dee5-3836-ba02-7bce35cef3e0
+2021-12-28 21:11:19,795 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-28 21:11:20,175 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 21:11:20,318 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 21:11:20,398 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 21:11:20,517 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 21:11:21,313 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-28 21:11:21,479 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 21:11:21,493 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:11:21,533 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-28 21:11:21,926 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 21:11:21,997 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 21:11:22,055 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 21:11:22,323 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 21:11:23,285 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 21:11:23,298 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 21:11:23,312 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:11:25,093 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 21:11:25,944 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 21:11:26,039 INFO org.springframework.boot.StartupInfoLogger [main] Started ProductTesting in 11.526 seconds (JVM running for 13.571)
+2021-12-28 21:11:26,257 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:11:26,262 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 21:11:26,268 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 21:11:27,353 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 21:11:27,487 INFO org.springframework.boot.StartupInfoLogger [main] Started ProductTesting in 10.852 seconds (JVM running for 13.079)
+2021-12-28 21:11:27,656 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:11:27,659 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 21:11:27,663 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 21:12:17,847 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:12:17,854 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:12:17,855 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:16:01,779 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:16:01,784 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:16:01,785 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:22:00,421 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:22:00,432 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 21:22:00,439 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 21:22:08,382 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:22:08,387 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:22:08,387 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:24:21,430 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:24:21,436 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:24:21,437 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:24:21,595 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.project3.revtech.RevtechApplication for test class ProductTesting
+2021-12-28 21:24:21,723 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-12-28 21:24:21,735 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5536379e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@277f7dd3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6c8bca63, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2364305a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@470a696f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bc715b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@292d1c71, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b491fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f1c5af9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c55f277, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ddabb18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e8f7922, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@63192798, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50eca7c6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58e6d4b8]
+2021-12-28 21:24:22,232 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 21:24:22,240 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProductTesting using Java 17.0.1 on jl12.fios-router.home with PID 74491 (started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 21:24:22,243 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-12-28 21:24:23,817 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 21:24:23,933 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 107 ms. Found 6 JPA repository interfaces.
+2021-12-28 21:24:24,224 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=6260c38e-dee5-3836-ba02-7bce35cef3e0
+2021-12-28 21:24:25,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-12-28 21:24:25,851 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-12-28 21:24:26,049 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 21:24:26,118 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 21:24:26,156 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 21:24:26,241 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 21:24:27,094 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 21:24:27,105 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:24:28,477 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 21:24:30,354 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 21:24:30,429 INFO org.springframework.boot.StartupInfoLogger [main] Started ProductTesting in 8.629 seconds (JVM running for 10.344)
+2021-12-28 21:24:30,608 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:24:30,611 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 21:24:30,614 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 21:25:32,926 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:25:32,931 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:25:32,932 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 21:54:12,809 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-12-28 21:54:12,835 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevtechApplication using Java 17.0.1 on jl12.fios-router.home with PID 75472 (/Users/jimad12/Desktop/jlProj3/project-3-back-end/target/classes started by jimad12 in /Users/jimad12/Desktop/jlProj3/project-3-back-end)
+2021-12-28 21:54:12,836 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-28 21:54:12,934 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-28 21:54:12,935 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-28 21:54:14,819 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-28 21:54:15,005 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 173 ms. Found 6 JPA repository interfaces.
+2021-12-28 21:54:15,428 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=60a8f46a-375f-3244-b6e0-4501178c13ed
+2021-12-28 21:54:16,556 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7777 (http)
+2021-12-28 21:54:16,579 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2021-12-28 21:54:16,580 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-12-28 21:54:16,581 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-28 21:54:16,686 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-12-28 21:54:16,687 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3751 ms
+2021-12-28 21:54:17,123 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-12-28 21:54:17,310 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-12-28 21:54:17,323 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shopme'
+2021-12-28 21:54:17,586 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-28 21:54:17,627 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-28 21:54:17,734 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-28 21:54:17,820 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2021-12-28 21:54:18,863 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-28 21:54:18,884 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 21:54:20,059 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-28 21:54:20,972 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-12-28 21:54:20,982 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-28 21:54:21,030 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2021-12-28 21:54:21,050 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7777 (http) with context path ''
+2021-12-28 21:54:21,074 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevtechApplication in 8.985 seconds (JVM running for 10.153)
+2021-12-28 21:54:50,562 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 21:54:50,568 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 21:54:50,569 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 22:01:48,407 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 22:01:48,413 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 22:01:48,413 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 22:04:48,352 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 22:04:48,359 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 22:04:48,360 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-12-28 22:12:03,089 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-28 22:12:03,101 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-28 22:12:03,112 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-12-28 22:18:40,234 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductTesting], using SpringBootContextLoader
+2021-12-28 22:18:40,241 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [ProductTesting]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-12-28 22:18:40,242 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [ProductTesting]: ProductTesting does not declare any static, non-private, non-final, nested classes annotated with @Configuration.

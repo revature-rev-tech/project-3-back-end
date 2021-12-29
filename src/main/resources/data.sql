@@ -16,7 +16,7 @@ VALUES('customer2@email.com', 123456, 'Test', 'Doe', 'California', '555-555-5555
 INSERT INTO user_details(user_email, user_password, user_first_name, user_last_name, user_address, user_contact, user_type, user_removed) 
 VALUES('customer3@email.com', 123456, 'Test', 'Doe', 'California', '555-555-5555', 'Customer', FALSE);
 
-<<<<<<< HEAD
+
 #--------- Fixed the missing columns User Tables
 INSERT INTO user_details(user_id, user_email, user_name, user_password, user_first_name,
 user_last_name, user_address, user_contact, user_type, user_removed)
@@ -68,4 +68,4 @@ INSERT INTO cart_items(cart_id, product_id, cart_qty) VALUES ( 1, 2, 1 );
 INSERT INTO discount_details(product_id, discount_description, discount_percentage) VALUES ( 2, 'stuff', 20.5 );
 
 
->>>>>>> main
+

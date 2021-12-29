@@ -19,8 +19,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-@Slf4j
+//@Slf4j
 public class StorageService {
+	/*
 	@Value("${application.bucket.name}")
 	private String bucketName;
 	
@@ -69,6 +70,6 @@ public class StorageService {
 		}
 		return convertedFile;
 	}
-
+*/
 
 }
