@@ -115,4 +115,19 @@ public class ProductServiceImpl implements ProductService {
         });
         return allProductPojo;
     }
+
+
+	@Override
+	public List<ProductPojo> categoryFilterService(String category) throws ApplicationException {
+		List<Product> categorizedProductEntity = this.productRepository.findAllByProductCategory(category);
+		List<ProductPojo> categorizedProductPojo = new ArrayList<>();
+		categorizedProductEntity.forEach((product) -> {
+			ProductPojo productPojo = new ProductPojo(product.getProductId(), product.getProductSku(),
+					product.getProductName(), product.getProductCost(),
+					product.getProductCategory(), product.getProductDescription(),
+					product.getProductQty(), product.getImageUrl(), product.isProductRemoved());
+			categorizedProductPojo.add(productPojo);
+		});
+		return categorizedProductPojo;
+	}
 }

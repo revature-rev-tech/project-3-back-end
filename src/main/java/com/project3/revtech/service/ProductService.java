@@ -11,6 +11,7 @@ public interface ProductService {
     boolean deleteProductService(int productId) throws ApplicationException;
     ProductPojo getAProductService(int  productId) throws ApplicationException;
     List<ProductPojo> getAllProductService() throws ApplicationException;
+    List<ProductPojo> categoryFilterService(String category) throws ApplicationException;
 
     //------Will add more custom Product service methods ----------//
 
