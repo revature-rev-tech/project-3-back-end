@@ -51,7 +51,12 @@ public class ProductController {
     List<ProductPojo> getAllProducts() throws ApplicationException{
         return productService.getAllProductService();
     }
-
+    
+    
+    @GetMapping("products/category/{ct}")
+    List<ProductPojo> categoryFilter(@PathVariable("ct") String category) throws ApplicationException{
+    	return productService.categoryFilterService(category);
+    }
     //-------endpoints  only for Get one or ALl  DiscountProduct(s) - JoinPojo related
     //  Get endPoint Api - List All discounted Products
     // http://localhost:7777/api/alldiscountedproducts
