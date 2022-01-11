@@ -3,23 +3,24 @@ package com.project3.revtech.pojo;
 public class UserPojo {
 
 	 private int user_id;
-	 private String firstName;
-	 private String lastName;
+	 private String first_name;
+	 private String last_name;
      private String username;
      private String email;
      private String password;
 	 private String address;
 	 private String contact;
+	 
 	public UserPojo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public UserPojo(int user_id, String firstName, String lastName, String username, String email, String password,
+	public UserPojo(int user_id, String first_name, String last_name, String username, String email, String password,
 			String address, String contact) {
 		super();
 		this.user_id = user_id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.first_name = first_name;
+		this.last_name = last_name;
 		this.username = username;
 		this.email = email;
 		this.password = password;
@@ -32,17 +33,17 @@ public class UserPojo {
 	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getFirst_name() {
+		return first_name;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstName(String first_name) {
+		this.first_name = first_name;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getLast_name() {
+		return last_name;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastName(String last_name) {
+		this.last_name = last_name;
 	}
 	public String getUsername() {
 		return username;
@@ -76,7 +77,7 @@ public class UserPojo {
 	}
 	@Override
 	public String toString() {
-		return "UserPojo [user_id=" + user_id + ", firstName=" + firstName + ", lastName=" + lastName + ", username="
+		return "UserPojo [user_id=" + user_id + ", firstName=" + first_name + ", lastName=" + last_name + ", username="
 				+ username + ", email=" + email + ", password=" + password + ", address=" + address + ", contact="
 				+ contact + "]";
 	}
