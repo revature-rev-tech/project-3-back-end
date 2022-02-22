@@ -1,4 +1,4 @@
 package com.project3.revtech.controller;
 
-public class TransactionController {
+public class TransactionControllerTest {
 }
