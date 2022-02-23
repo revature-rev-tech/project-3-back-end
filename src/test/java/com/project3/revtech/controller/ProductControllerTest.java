@@ -9,23 +9,62 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@SpringBootTest
+@AutoConfigureMockMvc
 public class ProductControllerTest {
-    public static ProductService productService;
 
-    @BeforeClass
-    public void setup(){
-        productService = Mockito.mock(ProductService.class);
-    }
+    @Autowired
+    private ProductController controller;
 
-
+    @Autowired
+    private MockMvc mockMvc;
 
     @Test
-    void getProductById()throws ApplicationException {
-        ProductPojo returned_product = new ProductPojo(1, "1234", "Ipod mini", null, "cat", "description", 1, "asdf", false);
-        Mockito.when(productService.getAProductService(1)).thenReturn(returned_product);
-        ProductPojo mocked_product = productService.getAProductService(1);
-        Assert.assertEquals(returned_product.getProductSku(), "1234");
-
+    public void contextLoads() throws Exception {
+        assertThat(controller).isNotNull();
     }
+
+    // Negative tests only due to not having log in credentials to access
+    // User needs to be logged in to get product
+    // "Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotReturnProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/getone/1")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotReturnGetAllProductsUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/getall")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotPostNewProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/add")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotUpdateProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/update/1")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotDeleteProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/delete/1")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+
 }
