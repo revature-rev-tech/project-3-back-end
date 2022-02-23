@@ -34,19 +34,37 @@ public class ProductControllerTest {
         assertThat(controller).isNotNull();
     }
 
+    // Negative tests only due to not having log in credentials to access
     // User needs to be logged in to get product
     // "Full authentication is required to access this resource","status":401
     @Test
-    public void shouldReturnUnauthorizedNotLoggedIn() throws Exception {
+    public void shouldNotReturnProductUnauthorizedNotLoggedIn() throws Exception {
         this.mockMvc.perform(get("/products/getone/1")).andDo(print()).andExpect(status().isUnauthorized());
     }
 
     //"Full authentication is required to access this resource","status":401
     @Test
-    public void shouldReturnGetAllUnauthorizedNotLoggedIn() throws Exception {
+    public void shouldNotReturnGetAllProductsUnauthorizedNotLoggedIn() throws Exception {
         this.mockMvc.perform(get("/products/getall")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotPostNewProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/add")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotUpdateProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/update/1")).andDo(print()).andExpect(status().isUnauthorized());
+    }
+
+    //"Full authentication is required to access this resource","status":401
+    @Test
+    public void shouldNotDeleteProductUnauthorizedNotLoggedIn() throws Exception {
+        this.mockMvc.perform(get("/products/delete/1")).andDo(print()).andExpect(status().isUnauthorized());
     }
 
 
 }
-
