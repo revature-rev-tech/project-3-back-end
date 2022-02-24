@@ -1,6 +1,7 @@
 package com.project3.revtech.E2E.runner;
 
 import com.project3.revtech.E2E.poms.Admin.AdminAddDiscountPOM;
+import com.project3.revtech.E2E.poms.Admin.AdminAddProductPOM;
 import com.project3.revtech.E2E.poms.Admin.AdminRemoveDiscountPOM;
 import com.project3.revtech.E2E.poms.Admin.AdminRemoveProductPOM;
 import com.project3.revtech.E2E.poms.User.*;
@@ -35,6 +36,7 @@ import java.util.concurrent.TimeUnit;
     public static AdminAddDiscountPOM adminAddDiscountPOM;
     public static AdminRemoveDiscountPOM adminRemoveDiscountPOM;
     public static AdminRemoveProductPOM adminRemoveProductPOM;
+    public static AdminAddProductPOM adminAddProductPOM;
 
 
     @BeforeClass
@@ -58,6 +60,8 @@ import java.util.concurrent.TimeUnit;
         adminAddDiscountPOM = new AdminAddDiscountPOM(driver);
         adminRemoveDiscountPOM = new AdminRemoveDiscountPOM(driver);
         adminRemoveProductPOM = new AdminRemoveProductPOM(driver);
+        adminAddProductPOM = new AdminAddProductPOM(driver);
+
 
 
         System.out.println("Set up complete!");
