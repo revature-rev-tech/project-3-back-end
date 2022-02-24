@@ -1,6 +1,6 @@
 package com.project3.revtech.E2E.runner;
 
-import com.project3.revtech.E2E.poms.*;
+import com.project3.revtech.E2E.poms.User.*;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -14,7 +14,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
-    @CucumberOptions(features = "classpath:features", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
+    @CucumberOptions(features = "classpath:features/User", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
             "html:src/test/java/resources/reports/html-reports.html"})
     public class TestRunner {
     public static WebDriver driver;
@@ -26,6 +26,9 @@ import java.util.concurrent.TimeUnit;
     public static UserSearchProductsPOM userSearchProductsPOM;
     public static PutItemInCartPOM putItemInCartPOM;
     public static PurchaseDiscountedPOM purchaseDiscountedPOM;
+    public static OrderHistoryPOM orderHistoryPOM;
+    public static UserAccountInfoPOM userAccountInfoPOM;
+    public static UserReviewsPOM userReviewsPOM;
 
 
     @BeforeClass
@@ -43,6 +46,9 @@ import java.util.concurrent.TimeUnit;
         userSearchProductsPOM = new UserSearchProductsPOM(driver);
         putItemInCartPOM = new PutItemInCartPOM(driver);
         purchaseDiscountedPOM = new PurchaseDiscountedPOM(driver);
+        orderHistoryPOM = new OrderHistoryPOM(driver);
+        userAccountInfoPOM = new UserAccountInfoPOM(driver);
+        userReviewsPOM = new UserReviewsPOM(driver);
 
         System.out.println("Set up complete!");
     }
