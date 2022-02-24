@@ -1,5 +1,6 @@
 package com.project3.revtech.E2E.runner;
 
+import com.project3.revtech.E2E.poms.Admin.AdminAddDiscountPOM;
 import com.project3.revtech.E2E.poms.User.*;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -14,7 +15,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
-    @CucumberOptions(features = "classpath:features/User", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
+    @CucumberOptions(features = "classpath:features/Admin", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
             "html:src/test/java/resources/reports/html-reports.html"})
     public class TestRunner {
     public static WebDriver driver;
@@ -29,6 +30,7 @@ import java.util.concurrent.TimeUnit;
     public static OrderHistoryPOM orderHistoryPOM;
     public static UserAccountInfoPOM userAccountInfoPOM;
     public static UserReviewsPOM userReviewsPOM;
+    public static AdminAddDiscountPOM adminAddDiscountPOM;
 
 
     @BeforeClass
@@ -49,6 +51,7 @@ import java.util.concurrent.TimeUnit;
         orderHistoryPOM = new OrderHistoryPOM(driver);
         userAccountInfoPOM = new UserAccountInfoPOM(driver);
         userReviewsPOM = new UserReviewsPOM(driver);
+        adminAddDiscountPOM = new AdminAddDiscountPOM(driver);
 
         System.out.println("Set up complete!");
     }
