@@ -15,7 +15,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
-    @CucumberOptions(features = "classpath:features/Admin", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
+    @CucumberOptions(features = "classpath:features", glue = "com.project3.revtech.E2E.steps", plugin = {"pretty",
             "html:src/test/java/resources/reports/html-reports.html"})
     public class TestRunner {
     public static WebDriver driver;
@@ -43,8 +43,8 @@ import java.util.concurrent.TimeUnit;
         System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        explicitWait = new WebDriverWait(driver, 10);
-        implicitWait = new WebDriverWait(driver, 5);
+        explicitWait = new WebDriverWait(driver, 2);
+        implicitWait = new WebDriverWait(driver, 2);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         userRegisterPOM = new UserRegisterPOM(driver);
         userLoginPOM = new UserLoginPOM(driver);
