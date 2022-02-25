@@ -1,9 +1,6 @@
 package com.project3.revtech.E2E.runner;
 
-import com.project3.revtech.E2E.poms.Admin.AdminAddDiscountPOM;
-import com.project3.revtech.E2E.poms.Admin.AdminAddProductPOM;
-import com.project3.revtech.E2E.poms.Admin.AdminRemoveDiscountPOM;
-import com.project3.revtech.E2E.poms.Admin.AdminRemoveProductPOM;
+import com.project3.revtech.E2E.poms.Admin.*;
 import com.project3.revtech.E2E.poms.User.*;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -37,6 +34,7 @@ import java.util.concurrent.TimeUnit;
     public static AdminRemoveDiscountPOM adminRemoveDiscountPOM;
     public static AdminRemoveProductPOM adminRemoveProductPOM;
     public static AdminAddProductPOM adminAddProductPOM;
+    public static AdminLogoutPOM adminLogoutPOM;
 
 
     @BeforeClass
@@ -61,6 +59,7 @@ import java.util.concurrent.TimeUnit;
         adminRemoveDiscountPOM = new AdminRemoveDiscountPOM(driver);
         adminRemoveProductPOM = new AdminRemoveProductPOM(driver);
         adminAddProductPOM = new AdminAddProductPOM(driver);
+        adminLogoutPOM = new AdminLogoutPOM(driver);
 
 
 
