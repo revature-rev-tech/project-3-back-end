@@ -12,9 +12,12 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -29,6 +32,30 @@ public class TransactionControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @Test
+    @WithMockUser(roles = "ADMIN", username = "admin")
+    public void getTransactionByIdAuthorizedLoggedInTest() throws Exception {
+        this.mockMvc.perform(get("/api/transaction/123/get")).andDo(print()).andExpect(status().is5xxServerError());
+    }
+
+    @Test
+    @WithMockUser(roles = "ADMIN", username = "admin")
+    public void getCartTransactionsAuthorizedLoggedInTest() throws Exception {
+        this.mockMvc.perform(get("/api/transaction/cart/{cid}/get",1)).andDo(print()).andExpect(status().isOk());
+    }
+
+    //Make sure to add the two other methods, post and put...
+
+    @Test
+    @WithMockUser(roles = "ADMIN", username = "admin")
+    public void deleteTransactionAuthorizedLoggedInTest() throws Exception {
+        this.mockMvc.perform(delete("/api/transaction/transaction/delete")).andExpect(status().isNotFound());
+    }
+
+
+    // --------------------------------------------------------- Negative Test --------------------------------
+
+
 
     @Test
     public void contextLoads() throws Exception {
@@ -37,7 +64,7 @@ public class TransactionControllerTest {
 
     //getTransactionById Constructor Test
     @Test
-    public void shouldReceiveTheTransactionIdTest() throws Exception {
+    public void shouldReceiveTheTransactionIdUnauthorizedLoggedInTest() throws Exception {
         this.mockMvc.perform(get("/10/get")).andDo(print()).andExpect(status().isUnauthorized());
     }
 
@@ -62,7 +89,7 @@ public class TransactionControllerTest {
     //deleteTransaction Constructor Test
     @Test
     public void deleteTransactionUnauthorizedLoggedInTest() throws Exception {
-        this.mockMvc.perform(get("/transaction/delete")).andDo(print()).andExpect(status().isUnauthorized());
+        this.mockMvc.perform(get("/transaction/delete")).andExpect(status().isUnauthorized());
     }
 
 }
