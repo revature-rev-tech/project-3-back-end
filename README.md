@@ -363,6 +363,6 @@ Test Team:
 * Amanda Gonzalez (Unit Test Development)
 * Eric Jennings (Integration Test Development)
 * Alejandro Lara (Unit Test Development)
-* David Zazulak (End-to-End Testing)
+* David Zazulak (End-to-End Test Development)
 
 
