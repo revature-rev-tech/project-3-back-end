@@ -54,7 +54,7 @@ The Revtech E-Commerce Application is an Angular Single Page Application (SPA) t
 ## Features
 List of features ready and TODOs for future development
 * Ability to register as a customer
-* Ability to login as an customer or administrator
+* Ability to login as a customer or administrator
 * Ability to view appropriate interfaces upon login dependent upon level of access (admin or customer)
 * Ability to add a product to storefront as an administrator
 * Ability to add a discounted product to storefront as an administrator
