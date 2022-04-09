@@ -9,8 +9,8 @@ import static org.mockito.Mockito.when;
 
 import com.project3.revtech.dao.UserRepository;
 import com.project3.revtech.entity.ERole;
-import com.project3.revtech.entity.Role;
-import com.project3.revtech.entity.User;
+import com.project3.revtech.entity.RoleEntity;
+import com.project3.revtech.entity.UserEntity;
 
 import java.util.Collection;
 
@@ -39,17 +39,17 @@ class UserDetailsServiceImplTest {
 
     @Test
     void testLoadUserByUsername() throws UsernameNotFoundException {
-        User user = new User();
+        UserEntity user = new UserEntity();
         user.setAddress("42 Main St");
         user.setContact("Contact");
         user.setEmail("jane.doe@example.org");
-        user.setFirst_name("Jane");
-        user.setLast_name("Doe");
+        user.setFirstName("Jane");
+        user.setLastName("Doe");
         user.setPassword("iloveyou");
         user.setRoles(new HashSet<>());
-        user.setUser_id(1);
+        user.setUserId(1);
         user.setUsername("janedoe");
-        Optional<User> ofResult = Optional.of(user);
+        Optional<UserEntity> ofResult = Optional.of(user);
         when(this.userRepository.findByUsername((String) any())).thenReturn(ofResult);
         UserDetails actualLoadUserByUsernameResult = this.userDetailsServiceImpl.loadUserByUsername("janedoe");
         assertEquals("42 Main St", ((UserDetailsImpl) actualLoadUserByUsernameResult).getAddress());
@@ -73,24 +73,24 @@ class UserDetailsServiceImplTest {
 
     @Test
     void testLoadUserByUsername3() throws UsernameNotFoundException {
-        Role role = new Role();
+        RoleEntity role = new RoleEntity();
         role.setId(1);
         role.setName(ERole.ROLE_USER);
 
-        HashSet<Role> roleSet = new HashSet<>();
+        HashSet<RoleEntity> roleSet = new HashSet<>();
         roleSet.add(role);
 
-        User user = new User();
+        UserEntity user = new UserEntity();
         user.setAddress("42 Main St");
         user.setContact("Contact");
         user.setEmail("jane.doe@example.org");
-        user.setFirst_name("Jane");
-        user.setLast_name("Doe");
+        user.setFirstName("Jane");
+        user.setLastName("Doe");
         user.setPassword("iloveyou");
         user.setRoles(roleSet);
-        user.setUser_id(1);
+        user.setUserId(1);
         user.setUsername("janedoe");
-        Optional<User> ofResult = Optional.of(user);
+        Optional<UserEntity> ofResult = Optional.of(user);
         when(this.userRepository.findByUsername((String) any())).thenReturn(ofResult);
         UserDetails actualLoadUserByUsernameResult = this.userDetailsServiceImpl.loadUserByUsername("janedoe");
         assertEquals("42 Main St", ((UserDetailsImpl) actualLoadUserByUsernameResult).getAddress());
@@ -109,29 +109,29 @@ class UserDetailsServiceImplTest {
 
     @Test
     void testLoadUserByUsername4() throws UsernameNotFoundException {
-        Role role = new Role();
+        RoleEntity role = new RoleEntity();
         role.setId(1);
         role.setName(ERole.ROLE_USER);
 
-        Role role1 = new Role();
+        RoleEntity role1 = new RoleEntity();
         role1.setId(1);
         role1.setName(ERole.ROLE_USER);
 
-        HashSet<Role> roleSet = new HashSet<>();
+        HashSet<RoleEntity> roleSet = new HashSet<>();
         roleSet.add(role1);
         roleSet.add(role);
 
-        User user = new User();
+        UserEntity user = new UserEntity();
         user.setAddress("42 Main St");
         user.setContact("Contact");
         user.setEmail("jane.doe@example.org");
-        user.setFirst_name("Jane");
-        user.setLast_name("Doe");
+        user.setFirstName("Jane");
+        user.setLastName("Doe");
         user.setPassword("iloveyou");
         user.setRoles(roleSet);
-        user.setUser_id(1);
+        user.setUserId(1);
         user.setUsername("janedoe");
-        Optional<User> ofResult = Optional.of(user);
+        Optional<UserEntity> ofResult = Optional.of(user);
         when(this.userRepository.findByUsername((String) any())).thenReturn(ofResult);
         UserDetails actualLoadUserByUsernameResult = this.userDetailsServiceImpl.loadUserByUsername("janedoe");
         assertEquals("42 Main St", ((UserDetailsImpl) actualLoadUserByUsernameResult).getAddress());

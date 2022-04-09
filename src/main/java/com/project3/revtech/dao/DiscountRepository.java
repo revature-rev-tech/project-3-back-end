@@ -1,10 +1,11 @@
 package com.project3.revtech.dao;
 
+import com.project3.revtech.entity.DiscountEntity;
 
-import com.project3.revtech.entity.Discount;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface DiscountRepository extends JpaRepository<Discount, Integer> {
-    Discount findByDiscountId(int discountId);
+import org.springframework.stereotype.Repository;
+@Repository
+public interface DiscountRepository extends JpaRepository<DiscountEntity, Integer> {
+    DiscountEntity findByDiscountId(int discountId);
 }
 
